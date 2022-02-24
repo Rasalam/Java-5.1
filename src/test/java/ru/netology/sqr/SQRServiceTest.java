@@ -11,7 +11,7 @@ class SQRServiceTest {
             "Range 121-143; 121; 143; 1", "Range 9604-9800; 9604; 9800; 1",
             "Range 9605-9801; 9605; 9801; 1", "Range 9802-10000; 9802; 10000; 0"},
             delimiter = ';')
-    void Test_NumberSquaresOfRange(String testName, int startRange, int endRange, int expected) {
+    void test_NumberSquaresOfRange(String testName, int startRange, int endRange, int expected) {
         SQRService service = new SQRService();
 
         int actual = service.numberSquaresOfRange(startRange, endRange);
